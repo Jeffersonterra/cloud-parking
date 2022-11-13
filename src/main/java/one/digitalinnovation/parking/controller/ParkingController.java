@@ -10,17 +10,18 @@ import org.springframework.web.bind.annotation.RestController;
 import one.digitalinnovation.parking.model.Parking;
 
 @RestController
+@RequestMapping("/parking")
 public class ParkingController {
-    @RequestMapping("/parking")
-
+    @GetMapping
     public List<Parking> findAll() {
         var parking = new Parking();
+        parking.setId("0001");
         parking.setColor("Preto");
         parking.setLicense("MSS-1111");
         parking.setModel("Gol");
         parking.setState("SP");
 
-        return Arrays.asList(parking, parking);
+        return Arrays.asList(parking);
     }
 
 }
