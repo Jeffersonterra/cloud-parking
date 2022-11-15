@@ -15,6 +15,7 @@
 	<description>Cloud Parking</description>
 	<properties>
 		<java.version>18</java.version>
+		 <modelmapper.version>2.3.5</modelmapper.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -28,7 +29,11 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-
+		<dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>${modelmapper.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
