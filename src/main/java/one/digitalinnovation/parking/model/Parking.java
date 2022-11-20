@@ -2,8 +2,6 @@ package one.digitalinnovation.parking.model;
 
 import java.time.LocalDateTime;
 
-import javax.*;
-
 public class Parking {
 
     private String id;
