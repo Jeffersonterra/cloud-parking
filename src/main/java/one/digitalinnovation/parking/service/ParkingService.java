@@ -36,4 +36,12 @@ public class ParkingService {
         return parkingMap.get(id);
     }
 
+    public Parking create(Parking parkingCreate) {
+        String uuid = getUUID();
+        parkingCreate.setId(uuid);
+        parkingCreate.setEntryDate(LocalDateTime.now());
+
+        return parkingCreate;
+    }
+
 }
